@@ -5,45 +5,36 @@ import time
 # Çekmek istediğiniz fonların listesi
 fonlar = ["AZH", "ALI", "AMF", "YHK", "PHE", "ALZ", "AZK", "AZL", "HSR", "YZD"]
 
-def tefas_verisi_al(fon_kodu, deneme_sayisi=3):
-    """TEFAS API'sinden veri çeker, hata durumunda yeniden dener."""
+def tefas_verisi_al(fon_kodu, deneme=3):
+    """TEFAS API'sinden veri çeker, hata durumunda tekrar dener."""
     url = "https://www.tefas.gov.tr/api/funds/fonBilgiGetir"
     payload = {"fonKodu": fon_kodu.upper()}
     headers = {
         "Content-Type": "application/json",
         "Accept": "application/json",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "Referer": "https://www.tefas.gov.tr/",
+        "Origin": "https://www.tefas.gov.tr"
     }
 
-    for i in range(deneme_sayisi):
+    for i in range(deneme):
         try:
-            # timeout=30 yaparak sunucuya daha fazla zaman tanıdık
-            response = requests.post(url, json=payload, headers=headers, timeout=30)
+            response = requests.post(url, json=payload, headers=headers, timeout=15)
+            print(f"  Status: {response.status_code}")
             response.raise_for_status()
             data = response.json()
-            
+
             if data.get("resultList") and len(data["resultList"]) > 0:
-                f = data["resultList"][0]
-                
-                def format_tr(val):
-                    return str(val).replace('.', ',')
-
-                buyukluk_milyon = round(f.get("portBuyukluk", 0) / 1_000_000, 2)
-
+                fund_info = data["resultList"][0]
                 return {
-                    "KOD": fon_kodu,
-                    "AD": f.get("fonUnvan", ""),
-                    "FİYAT": format_tr(f.get("sonFiyat", 0)),
-                    "DEĞİŞİM": format_tr(f.get("gunlukGetiri", 0)),
-                    "SIRALAMA": f"{f.get('kategoriDerece', 0)} / {f.get('kategoriFonSay', 0)}",
-                    "TARİH": f.get("tarih", "")
+                    "FON ADI": fon_kodu,
+                    "FİYAT": str(fund_info.get("sonFiyat", 0)).replace('.', ','),
+                    "DEĞİŞİM": str(fund_info.get("gunlukGetiri", 0)).replace('.', ',')
                 }
         except Exception as e:
-            if i < deneme_sayisi - 1:
-                print(f"Uyarı: {fon_kodu} için {i+1}. deneme başarısız, tekrar deneniyor... ({e})")
-                time.sleep(2) # 2 saniye bekle ve tekrar dene
-            else:
-                print(f"Hata: {fon_kodu} 3 denemeye rağmen çekilemedi: {e}")
+            print(f"  Deneme {i+1}/{deneme} başarısız ({fon_kodu}): {e}")
+            time.sleep(3)  # ← tekrar denemeden önce bekle
+
     return None
 
 def main():
