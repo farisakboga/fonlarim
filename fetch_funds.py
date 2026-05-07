@@ -33,11 +33,8 @@ def tefas_verisi_al(fon_kodu, deneme_sayisi=3):
                 return {
                     "KOD": fon_kodu,
                     "AD": f.get("fonUnvan", ""),
-                    "KATEGORİ": f.get("fonKategori", ""),
                     "FİYAT": format_tr(f.get("sonFiyat", 0)),
                     "DEĞİŞİM": format_tr(f.get("gunlukGetiri", 0)),
-                    "YATIRIMCI": f"{f.get('yatirimciSayi', 0):,}".replace(',', '.'),
-                    "BÜYÜKLÜK_MİLYON_TL": format_tr(buyukluk_milyon),
                     "SIRALAMA": f"{f.get('kategoriDerece', 0)} / {f.get('kategoriFonSay', 0)}",
                     "TARİH": f.get("tarih", "")
                 }
