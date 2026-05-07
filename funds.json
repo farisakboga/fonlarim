@@ -1,82 +1,52 @@
 [
     {
-        "KOD": "AZH",
-        "AD": "ALLIANZ HAYAT VE EMEKLİLİK A.Ş. HİSSE SENEDİ EMEKLİLİK YATIRIM FONU",
+        "FON ADI": "AZH",
         "FİYAT": "2,682165",
-        "DEĞİŞİM": "2,8178",
-        "SIRALAMA": "30 / 39",
-        "TARİH": ""
+        "DEĞİŞİM": "2,8178"
     },
     {
-        "KOD": "ALI",
-        "AD": "ALLIANZ YAŞAM VE EMEKLİLİK A.Ş. KOÇ İŞTİRAK ENDEKSİ EMEKLİLİK YATIRIM FONU",
+        "FON ADI": "ALI",
         "FİYAT": "0,591204",
-        "DEĞİŞİM": "1,8274",
-        "SIRALAMA": "2 / 4",
-        "TARİH": ""
+        "DEĞİŞİM": "1,8274"
     },
     {
-        "KOD": "AMF",
-        "AD": "ALLIANZ YAŞAM VE EMEKLİLİK A.Ş. KATKI EMEKLİLİK YATIRIM FONU",
+        "FON ADI": "AMF",
         "FİYAT": "0,097427",
-        "DEĞİŞİM": "2,0296",
-        "SIRALAMA": "5 / 12",
-        "TARİH": ""
+        "DEĞİŞİM": "2,0296"
     },
     {
-        "KOD": "YHK",
-        "AD": "YAPI KREDİ PORTFÖY KATILIM HİSSE SENEDİ FONU (HİSSE SENEDİ YOĞUN FON)",
+        "FON ADI": "YHK",
         "FİYAT": "1,968744",
-        "DEĞİŞİM": "1,7332",
-        "SIRALAMA": "14 / 187",
-        "TARİH": ""
+        "DEĞİŞİM": "1,7332"
     },
     {
-        "KOD": "PHE",
-        "AD": "PUSULA PORTFÖY HİSSE SENEDİ FONU (HİSSE SENEDİ YOĞUN FON)",
+        "FON ADI": "PHE",
         "FİYAT": "2,893337",
-        "DEĞİŞİM": "0,759",
-        "SIRALAMA": "1 / 187",
-        "TARİH": ""
+        "DEĞİŞİM": "0,759"
     },
     {
-        "KOD": "ALZ",
-        "AD": "ALLIANZ YAŞAM VE EMEKLİLİK A.Ş. BAŞLANGIÇ EMEKLİLİK YATIRIM FONU",
+        "FON ADI": "ALZ",
         "FİYAT": "0,09904",
-        "DEĞİŞİM": "0,1527",
-        "SIRALAMA": "3 / 10",
-        "TARİH": ""
+        "DEĞİŞİM": "0,1527"
     },
     {
-        "KOD": "AZK",
-        "AD": "ALLIANZ HAYAT VE EMEKLİLİK A.Ş. BORÇLANMA ARAÇLARI EMEKLİLİK YATIRIM FONU",
+        "FON ADI": "AZK",
         "FİYAT": "0,356258",
-        "DEĞİŞİM": "0,7056",
-        "SIRALAMA": "9 / 22",
-        "TARİH": ""
+        "DEĞİŞİM": "0,7056"
     },
     {
-        "KOD": "AZL",
-        "AD": "ALLIANZ HAYAT VE EMEKLİLİK A.Ş. PARA PİYASASI EMEKLİLİK YATIRIM FONU",
+        "FON ADI": "AZL",
         "FİYAT": "0,369306",
-        "DEĞİŞİM": "0,1747",
-        "SIRALAMA": "8 / 13",
-        "TARİH": ""
+        "DEĞİŞİM": "0,1747"
     },
     {
-        "KOD": "HSR",
-        "AD": "ALLİANZ YAŞAM VE EMEKLİLİK A.Ş. HİSSE SENEDİ EMEKLİLİK YATIRIM FONU",
+        "FON ADI": "HSR",
         "FİYAT": "0,013168",
-        "DEĞİŞİM": "3,0441",
-        "SIRALAMA": "34 / 39",
-        "TARİH": ""
+        "DEĞİŞİM": "3,0441"
     },
     {
-        "KOD": "YZD",
-        "AD": "ALLİANZ YAŞAM VE EMEKLİLİK A.Ş. TEKNOLOJİ SEKTÖRÜ FON SEPETİ EMEKLİLİK YATIRIM FONU",
+        "FON ADI": "YZD",
         "FİYAT": "0,061598",
-        "DEĞİŞİM": "1,4209",
-        "SIRALAMA": "3 / 23",
-        "TARİH": ""
+        "DEĞİŞİM": "1,4209"
     }
 ]
