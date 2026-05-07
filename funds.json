@@ -2,110 +2,80 @@
     {
         "KOD": "AZH",
         "AD": "ALLIANZ HAYAT VE EMEKLİLİK A.Ş. HİSSE SENEDİ EMEKLİLİK YATIRIM FONU",
-        "KATEGORİ": "Hisse Senedi Fonu",
         "FİYAT": "2,682165",
         "DEĞİŞİM": "2,8178",
-        "YATIRIMCI": "305.972",
-        "BÜYÜKLÜK_MİLYON_TL": "32234,19",
         "SIRALAMA": "30 / 39",
         "TARİH": ""
     },
     {
         "KOD": "ALI",
         "AD": "ALLIANZ YAŞAM VE EMEKLİLİK A.Ş. KOÇ İŞTİRAK ENDEKSİ EMEKLİLİK YATIRIM FONU",
-        "KATEGORİ": "Endeks Fon",
         "FİYAT": "0,591204",
         "DEĞİŞİM": "1,8274",
-        "YATIRIMCI": "127.305",
-        "BÜYÜKLÜK_MİLYON_TL": "7620,91",
         "SIRALAMA": "2 / 4",
         "TARİH": ""
     },
     {
         "KOD": "AMF",
         "AD": "ALLIANZ YAŞAM VE EMEKLİLİK A.Ş. KATKI EMEKLİLİK YATIRIM FONU",
-        "KATEGORİ": "Devlet Katkısı Fonu",
         "FİYAT": "0,097427",
         "DEĞİŞİM": "2,0296",
-        "YATIRIMCI": "1.423.043",
-        "BÜYÜKLÜK_MİLYON_TL": "38068,16",
         "SIRALAMA": "5 / 12",
         "TARİH": ""
     },
     {
         "KOD": "YHK",
         "AD": "YAPI KREDİ PORTFÖY KATILIM HİSSE SENEDİ FONU (HİSSE SENEDİ YOĞUN FON)",
-        "KATEGORİ": "Hisse Senedi Fonu",
         "FİYAT": "1,968744",
         "DEĞİŞİM": "1,7332",
-        "YATIRIMCI": "6.050",
-        "BÜYÜKLÜK_MİLYON_TL": "1125,5",
         "SIRALAMA": "14 / 187",
         "TARİH": ""
     },
     {
         "KOD": "PHE",
         "AD": "PUSULA PORTFÖY HİSSE SENEDİ FONU (HİSSE SENEDİ YOĞUN FON)",
-        "KATEGORİ": "Hisse Senedi Fonu",
         "FİYAT": "2,893337",
         "DEĞİŞİM": "0,759",
-        "YATIRIMCI": "91.375",
-        "BÜYÜKLÜK_MİLYON_TL": "37474,05",
         "SIRALAMA": "1 / 187",
         "TARİH": ""
     },
     {
         "KOD": "ALZ",
         "AD": "ALLIANZ YAŞAM VE EMEKLİLİK A.Ş. BAŞLANGIÇ EMEKLİLİK YATIRIM FONU",
-        "KATEGORİ": "Başlangıç Fonu",
         "FİYAT": "0,09904",
         "DEĞİŞİM": "0,1527",
-        "YATIRIMCI": "124.890",
-        "BÜYÜKLÜK_MİLYON_TL": "771,04",
         "SIRALAMA": "3 / 10",
         "TARİH": ""
     },
     {
         "KOD": "AZK",
         "AD": "ALLIANZ HAYAT VE EMEKLİLİK A.Ş. BORÇLANMA ARAÇLARI EMEKLİLİK YATIRIM FONU",
-        "KATEGORİ": "Borçlanma Araçları Fonu",
         "FİYAT": "0,356258",
         "DEĞİŞİM": "0,7056",
-        "YATIRIMCI": "331.635",
-        "BÜYÜKLÜK_MİLYON_TL": "9184,66",
         "SIRALAMA": "9 / 22",
         "TARİH": ""
     },
     {
         "KOD": "AZL",
         "AD": "ALLIANZ HAYAT VE EMEKLİLİK A.Ş. PARA PİYASASI EMEKLİLİK YATIRIM FONU",
-        "KATEGORİ": "Para Piyasası Fonu",
         "FİYAT": "0,369306",
         "DEĞİŞİM": "0,1747",
-        "YATIRIMCI": "371.239",
-        "BÜYÜKLÜK_MİLYON_TL": "74668,31",
         "SIRALAMA": "8 / 13",
         "TARİH": ""
     },
     {
         "KOD": "HSR",
         "AD": "ALLİANZ YAŞAM VE EMEKLİLİK A.Ş. HİSSE SENEDİ EMEKLİLİK YATIRIM FONU",
-        "KATEGORİ": "Hisse Senedi Fonu",
         "FİYAT": "0,013168",
         "DEĞİŞİM": "3,0441",
-        "YATIRIMCI": "72.519",
-        "BÜYÜKLÜK_MİLYON_TL": "9844,85",
         "SIRALAMA": "34 / 39",
         "TARİH": ""
     },
     {
         "KOD": "YZD",
         "AD": "ALLİANZ YAŞAM VE EMEKLİLİK A.Ş. TEKNOLOJİ SEKTÖRÜ FON SEPETİ EMEKLİLİK YATIRIM FONU",
-        "KATEGORİ": "Fon Sepeti Fonu",
         "FİYAT": "0,061598",
         "DEĞİŞİM": "1,4209",
-        "YATIRIMCI": "41.809",
-        "BÜYÜKLÜK_MİLYON_TL": "3495,39",
         "SIRALAMA": "3 / 23",
         "TARİH": ""
     }
