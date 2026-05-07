@@ -3,7 +3,7 @@ import json
 import time
 
 # Çekmek istediğiniz fonların listesi
-fonlar = ["AZH", "ALI", "AMF", "YHK", "PHE", "ALZ", "AZK", "AZL", "HSR", "YZD"]
+fonlar = ["AZH", "ALI", "AMF", "YHK", "PHE", "ALZ", "AZK", "AZL", "HSR", "YZD", "AMZ"]
 
 def tefas_verisi_al(fon_kodu, deneme=3):
     """TEFAS API'sinden veri çeker, hata durumunda tekrar dener."""
