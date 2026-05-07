@@ -59,22 +59,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-```
-
-### Bu Bilgiler Web Sayfasında (index.html) Nasıl Görünür?
-
-Eğer bu verileri web sitenizde yayınlayacaksanız, `index.html` dosyanızdaki JavaScript kısmını da bu yeni anahtar kelimelere göre güncellemeniz gerekir.
-
-**Örnek JavaScript değişikliği:**
-```javascript
-data.forEach(item => {
-    const row = `<tr>
-        <td><b>${item['KOD']}</b></td>
-        <td><small>${item['AD']}</small></td>
-        <td>${item['FİYAT']}</td>
-        <td class="plus">%${item['DEĞİŞİM']}</td>
-        <td>${item['YATIRIMCI']}</td>
-        <td>${item['SIRALAMA']}</td>
-    </tr>`;
-    tbody.innerHTML += row;
-});
