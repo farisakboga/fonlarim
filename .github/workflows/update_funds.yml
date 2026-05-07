@@ -2,8 +2,8 @@ name: Fon Verilerini Güncelle
 
 on:
   schedule:
-    - cron: '0 16 * * 1-5'   # Her iş günü 19:00 TSİ (UTC+3 = UTC 16:00)
-    - cron: '0 9 * * 1-5'    # Her iş günü 12:00 TSİ
+    - cron: '0 4 * * 1-5'   # Her iş günü 19:00 TSİ (UTC+3 = UTC 16:00)
+    - cron: '0 6 * * 1-5'    # Her iş günü 12:00 TSİ
   workflow_dispatch:           # Manuel tetikleme butonu
 
 permissions:
