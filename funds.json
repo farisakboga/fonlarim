@@ -8,7 +8,6 @@
         "YATIRIMCI": "305.972",
         "BÜYÜKLÜK_MİLYON_TL": "32234,19",
         "SIRALAMA": "30 / 39",
-        "PAZAR_PAYI": "15,86",
         "TARİH": ""
     },
     {
@@ -20,7 +19,6 @@
         "YATIRIMCI": "127.305",
         "BÜYÜKLÜK_MİLYON_TL": "7620,91",
         "SIRALAMA": "2 / 4",
-        "PAZAR_PAYI": "55,19",
         "TARİH": ""
     },
     {
@@ -32,7 +30,6 @@
         "YATIRIMCI": "1.423.043",
         "BÜYÜKLÜK_MİLYON_TL": "38068,16",
         "SIRALAMA": "5 / 12",
-        "PAZAR_PAYI": "15,46",
         "TARİH": ""
     },
     {
@@ -44,7 +41,6 @@
         "YATIRIMCI": "6.050",
         "BÜYÜKLÜK_MİLYON_TL": "1125,5",
         "SIRALAMA": "14 / 187",
-        "PAZAR_PAYI": "0,5",
         "TARİH": ""
     },
     {
@@ -56,7 +52,28 @@
         "YATIRIMCI": "91.375",
         "BÜYÜKLÜK_MİLYON_TL": "37474,05",
         "SIRALAMA": "1 / 187",
-        "PAZAR_PAYI": "16,59",
+        "TARİH": ""
+    },
+    {
+        "KOD": "ALZ",
+        "AD": "ALLIANZ YAŞAM VE EMEKLİLİK A.Ş. BAŞLANGIÇ EMEKLİLİK YATIRIM FONU",
+        "KATEGORİ": "Başlangıç Fonu",
+        "FİYAT": "0,09904",
+        "DEĞİŞİM": "0,1527",
+        "YATIRIMCI": "124.890",
+        "BÜYÜKLÜK_MİLYON_TL": "771,04",
+        "SIRALAMA": "3 / 10",
+        "TARİH": ""
+    },
+    {
+        "KOD": "AZK",
+        "AD": "ALLIANZ HAYAT VE EMEKLİLİK A.Ş. BORÇLANMA ARAÇLARI EMEKLİLİK YATIRIM FONU",
+        "KATEGORİ": "Borçlanma Araçları Fonu",
+        "FİYAT": "0,356258",
+        "DEĞİŞİM": "0,7056",
+        "YATIRIMCI": "331.635",
+        "BÜYÜKLÜK_MİLYON_TL": "9184,66",
+        "SIRALAMA": "9 / 22",
         "TARİH": ""
     },
     {
@@ -68,7 +85,6 @@
         "YATIRIMCI": "371.239",
         "BÜYÜKLÜK_MİLYON_TL": "74668,31",
         "SIRALAMA": "8 / 13",
-        "PAZAR_PAYI": "27,57",
         "TARİH": ""
     },
     {
@@ -80,7 +96,6 @@
         "YATIRIMCI": "72.519",
         "BÜYÜKLÜK_MİLYON_TL": "9844,85",
         "SIRALAMA": "34 / 39",
-        "PAZAR_PAYI": "4,84",
         "TARİH": ""
     },
     {
@@ -92,7 +107,6 @@
         "YATIRIMCI": "41.809",
         "BÜYÜKLÜK_MİLYON_TL": "3495,39",
         "SIRALAMA": "3 / 23",
-        "PAZAR_PAYI": "4,56",
         "TARİH": ""
     }
 ]
