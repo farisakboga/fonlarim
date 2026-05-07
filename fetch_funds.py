@@ -4,42 +4,37 @@ import time
 
 fonlar = ["AZH", "ALI", "AMF", "YHK", "PHE", "ALZ", "AZK", "AZL", "HSR", "YZD"]
 
-def tefas_verisi_al(fon_kodu):
+def tefas_verisi_al(fon_kodu, deneme=3):
+    """TEFAS API'sinden veri çeker, hata durumunda tekrar dener."""
     url = "https://www.tefas.gov.tr/api/funds/fonBilgiGetir"
     payload = {"fonKodu": fon_kodu.upper()}
     headers = {
         "Content-Type": "application/json",
         "Accept": "application/json",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
         "Referer": "https://www.tefas.gov.tr/",
         "Origin": "https://www.tefas.gov.tr"
     }
-    try:
-        response = requests.post(url, json=payload, headers=headers, timeout=15)
-        
-        # ← YENİ: Ham yanıtı logla
-        print(f"  Status: {response.status_code}")
-        print(f"  Response: {response.text[:200]}")
-        
-        response.raise_for_status()
-        data = response.json()
 
-        if data.get("resultList") and len(data["resultList"]) > 0:
-            fund_info = data["resultList"][0]
-            fiyat = fund_info.get("sonFiyat", 0)
-            degisim = fund_info.get("gunlukGetiri", 0)
-            return {
-                "FON ADI": fon_kodu,
-                "FİYAT": str(fiyat).replace('.', ','),
-                "DEĞİŞİM": str(degisim).replace('.', ',')
-            }
-        else:
-            print(f"  UYARI: {fon_kodu} için resultList boş!")
-            return None
+    for i in range(deneme):
+        try:
+            response = requests.post(url, json=payload, headers=headers, timeout=15)
+            print(f"  Status: {response.status_code}")
+            response.raise_for_status()
+            data = response.json()
 
-    except Exception as e:
-        print(f"  HATA ({fon_kodu}): {e}")
-        return None
+            if data.get("resultList") and len(data["resultList"]) > 0:
+                fund_info = data["resultList"][0]
+                return {
+                    "FON ADI": fon_kodu,
+                    "FİYAT": str(fund_info.get("sonFiyat", 0)).replace('.', ','),
+                    "DEĞİŞİM": str(fund_info.get("gunlukGetiri", 0)).replace('.', ',')
+                }
+        except Exception as e:
+            print(f"  Deneme {i+1}/{deneme} başarısız ({fon_kodu}): {e}")
+            time.sleep(3)  # ← tekrar denemeden önce bekle
+
+    return None
 
 def main():
     data_list = []
